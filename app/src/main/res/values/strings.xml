@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Pocket’s goal are tasks and motivation</string>
+    <string name="setup">setup</string>
+    <string name="timeline">timeline</string>
+    <string name="your_goals">your goals</string>
+    <string name="title_activity_goals_setup">goalsSetup</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, his munere nostrum inimicus ad, volumus oportere similique id per.
+		Atqui iriure ius cu. Enim tation vix cu. Ne sea accumsan albucius urbanitas.
+	</string>
+    <string name="next">Далее</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+
 </resources>
