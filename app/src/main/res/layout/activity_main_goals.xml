@@ -19,7 +19,10 @@
         android:layout_column="0"
         android:layout_columnWeight="0.1"
         android:layout_margin="2sp"
-        android:src="@mipmap/ic_launcher" />
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@mipmap/ic_launcher"
+        android:onClick="onClickSport"/>
 
     <TextView
         android:id="@+id/tv_sport"
@@ -39,6 +42,8 @@
         android:layout_column="1"
         android:layout_columnWeight="1"
         android:layout_margin="2sp"
+        android:clickable="true"
+        android:focusable="true"
         android:src="@mipmap/ic_launcher" />
 
     <TextView
@@ -59,6 +64,8 @@
         android:layout_column="0"
         android:layout_columnWeight="1"
         android:layout_margin="2sp"
+        android:clickable="true"
+        android:focusable="true"
         android:src="@mipmap/ic_launcher"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -80,6 +87,8 @@
         android:layout_column="1"
         android:layout_columnWeight="1"
         android:layout_margin="2sp"
+        android:clickable="true"
+        android:focusable="true"
         android:src="@mipmap/ic_launcher" />
 
     <TextView
@@ -100,6 +109,8 @@
         android:layout_column="0"
         android:layout_columnWeight="1"
         android:layout_margin="2sp"
+        android:clickable="true"
+        android:focusable="true"
         android:src="@mipmap/ic_launcher" />
 
     <TextView
@@ -120,6 +131,8 @@
         android:layout_column="1"
         android:layout_columnWeight="1"
         android:layout_margin="2sp"
+        android:clickable="true"
+        android:focusable="true"
         android:src="@mipmap/ic_launcher" />
 
     <TextView

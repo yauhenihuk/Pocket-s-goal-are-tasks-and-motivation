@@ -1,8 +1,10 @@
 package com.example.pocketsgoalaretasksandmotivation.activities
 
+import android.app.PendingIntent.getActivity
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.view.View
 import android.widget.ImageView
 import android.widget.Toast
 import com.example.pocketsgoalaretasksandmotivation.R
@@ -14,18 +16,14 @@ class GoalsMain : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_goals)
 
-        val ivSport: ImageView = findViewById(R.id.iv_sport) as ImageView
-        val ivHealth: ImageView = findViewById(R.id.iv_health) as ImageView
-        val ivBusiness: ImageView = findViewById(R.id.iv_businessGoals) as ImageView
-        val ivCareersGoals: ImageView = findViewById(R.id.iv_careersGoals) as ImageView
-        val ivFinanceGoals: ImageView = findViewById(R.id.iv_financeGoals) as ImageView
-        val ivOthers: ImageView = findViewById(R.id.iv_others) as ImageView
 
-        ivSport.setOnClickListener {
-            Toast.makeText(this@GoalsMain, "You clicked on ImageView.", Toast.LENGTH_SHORT).show()
-            val intent = Intent(this, Sport::class.java)
-            startActivity(intent)
-        }
+        val ivHealth = findViewById(R.id.iv_health) as ImageView
+        val ivBusiness = findViewById(R.id.iv_businessGoals) as ImageView
+        val ivCareersGoals = findViewById(R.id.iv_careersGoals) as ImageView
+        val ivFinanceGoals = findViewById(R.id.iv_financeGoals) as ImageView
+        val ivOthers = findViewById(R.id.iv_others) as ImageView
+
+
 
         ivHealth.setOnClickListener {
             val intent = Intent(this, Health::class.java)
@@ -49,6 +47,15 @@ class GoalsMain : AppCompatActivity() {
 
         ivOthers.setOnClickListener {
             val intent = Intent(this, Others::class.java)
+            startActivity(intent)
+        }
+
+    }
+
+    fun onClickSport(v: View) {
+        val ivSport = findViewById<ImageView>(R.id.iv_sport)
+        ivSport.setOnClickListener {
+            val intent = Intent(this@GoalsMain, Sport::class.java)
             startActivity(intent)
         }
 
