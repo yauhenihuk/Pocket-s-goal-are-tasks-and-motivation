@@ -54,7 +54,6 @@ class DateOfBirthday : AppCompatActivity() {
                 dpDialog.window?.setBackgroundDrawable(ColorDrawable(Color.WHITE))
                 dpDialog.show()
             }
-
         })
 
         btn_next!!.setOnClickListener{
