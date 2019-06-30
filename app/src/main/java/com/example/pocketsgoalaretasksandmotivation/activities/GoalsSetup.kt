@@ -3,7 +3,6 @@ package com.example.pocketsgoalaretasksandmotivation.activities
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity;
-import android.view.View
 import android.widget.ImageView
 import com.example.pocketsgoalaretasksandmotivation.R
 import com.example.pocketsgoalaretasksandmotivation.activities.goals.*
@@ -18,8 +17,12 @@ class GoalsSetup : AppCompatActivity() {
         val ivCareersGoals = findViewById(R.id.iv_careersGoals) as ImageView
         val ivFinanceGoals = findViewById(R.id.iv_financeGoals) as ImageView
         val ivOthers = findViewById(R.id.iv_others) as ImageView
+        val ivSport = findViewById<ImageView>(R.id.iv_sport)
 
-
+        ivSport.setOnClickListener {
+            val intent = Intent(this, Sport::class.java)
+            startActivity(intent)
+        }
 
         ivHealth.setOnClickListener {
             val intent = Intent(this, Health::class.java)
@@ -43,15 +46,6 @@ class GoalsSetup : AppCompatActivity() {
 
         ivOthers.setOnClickListener {
             val intent = Intent(this, Others::class.java)
-            startActivity(intent)
-        }
-
-    }
-
-    fun onClickSport(v: View) {
-        val ivSport = findViewById<ImageView>(R.id.iv_sport)
-        ivSport.setOnClickListener {
-            val intent = Intent(this, Sport::class.java)
             startActivity(intent)
         }
 

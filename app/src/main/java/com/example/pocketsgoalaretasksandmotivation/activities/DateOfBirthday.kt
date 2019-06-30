@@ -43,8 +43,6 @@ class DateOfBirthday : AppCompatActivity() {
                 cal.set(Calendar.MONTH, monthOfYear)
                 cal.set(Calendar.DAY_OF_MONTH, dayOfMonth)
                 updateDateInView()
-
-
             }
         }
 
@@ -53,7 +51,7 @@ class DateOfBirthday : AppCompatActivity() {
                 val dpDialog = DatePickerDialog(this@DateOfBirthday,
                     android.R.style.Widget_DatePicker,dateSetListener,
                     cal.get(Calendar.YEAR),  cal.get(Calendar.MONTH), cal.get(Calendar.DAY_OF_MONTH))
-                dpDialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+                dpDialog.window?.setBackgroundDrawable(ColorDrawable(Color.WHITE))
                 dpDialog.show()
             }
 
