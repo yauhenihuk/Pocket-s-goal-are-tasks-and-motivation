@@ -5,14 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/newBackground"
-    tools:context=".activities.IntroFirst">
-
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.50" />
+    tools:context=".activities.IntroSecond">
 
 
     <android.support.constraint.Guideline
@@ -30,7 +23,7 @@
         app:layout_constraintGuide_percent="0.1" />
 
     <ImageView
-        android:id="@+id/iv_pocketsGoal1"
+        android:id="@+id/iv_pocketsGoal2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
@@ -38,7 +31,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/pg1" />
+        app:srcCompat="@drawable/pg2" />
+
 
     <TextView
         android:id="@+id/textView2"
@@ -48,10 +42,68 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:fontFamily="@font/ultimapro_italic"
-        android:text="@string/intro75yearsLife"
+        android:text="@string/intro2"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
-        app:layout_constraintTop_toBottomOf="@+id/iv_pocketsGoal1" />
+        app:layout_constraintTop_toBottomOf="@+id/iv_pocketsGoal2" />
+
+    <ImageView
+        android:id="@+id/iv_redSquare"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/iv_rounded_corners_red"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/tv_redLife"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/ultimapro_italic"
+        android:text="@string/red_squre"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toEndOf="@+id/iv_redSquare"
+        app:layout_constraintTop_toTopOf="@+id/iv_redSquare" />
+
+    <ImageView
+        android:id="@+id/iv_greenSquare"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/iv_rounded_corners_green"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/iv_redSquare" />
+
+    <TextView
+        android:id="@+id/tv_greenLife"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/ultimapro_italic"
+        android:text="@string/green_square"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toEndOf="@+id/iv_greenSquare"
+        app:layout_constraintTop_toTopOf="@+id/iv_greenSquare" />
+
+    <TextView
+        android:id="@+id/tv_nowLife"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/ultimapro_italic"
+        android:text="@string/now_life"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/iv_greenSquare" />
 
     <Button
         android:id="@+id/btn_next"
@@ -74,7 +126,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="12dp"
-        android:background="@drawable/pick1"
+        android:background="@drawable/pick2"
         app:layout_constraintBottom_toTopOf="@+id/ll_admobbanner"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

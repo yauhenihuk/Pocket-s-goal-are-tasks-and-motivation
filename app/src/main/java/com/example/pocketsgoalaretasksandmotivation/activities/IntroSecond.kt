@@ -1,13 +1,13 @@
-package com.example.pocketsgoalaretasksandmotivation.activities.goals
+package com.example.pocketsgoalaretasksandmotivation.activities
 
-import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.os.Bundle
 import com.example.pocketsgoalaretasksandmotivation.R
 
-class GoalsCreator : AppCompatActivity() {
+class IntroSecond : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_goals_creator)
+        setContentView(R.layout.activity_intro_second)
     }
 }

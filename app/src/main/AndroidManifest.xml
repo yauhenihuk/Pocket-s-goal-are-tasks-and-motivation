@@ -9,17 +9,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".activities.InroThird"
+            android:label="@string/title_activity_inro_third"
+            android:theme="@style/NoActionBar"></activity>
+
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-4752027791866566~2373420938"/>
+            android:value="ca-app-pub-4752027791866566~2373420938" />
+
         <activity
-            android:name=".activities.IntroFirst"
+            android:name=".activities.DateOfBirthday"
             android:screenOrientation="portrait" />
         <activity
             android:name=".activities.goals.GoalsList"
             android:screenOrientation="portrait" />
         <activity
             android:name=".activities.GoalSetup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.IntroSecond"
             android:screenOrientation="portrait" />
         <activity
             android:name=".activities.goals.Others"
@@ -49,7 +58,7 @@
             android:name=".activities.GoalsMain"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activities.DateOfBirthday"
+            android:name=".activities.IntroFirst"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action
